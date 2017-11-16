@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>观影</title>
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <style type='text/css'>
+    body {
+      font-size: 14px;
+    }
+    .container {
+      /* overflow: auto; */
+      position: relative;
+      margin: 2rem auto;
+    }
+    .main {
+      width: 6.26rem;
+      height: 6.29rem;
+      background: url('./img/turntable_wheel@2x.png') no-repeat;
+      background-size: 100%;
+      /* transform-origin: 3.13rem 3.145rem; */
+      display: inline-block;
+    }
+
+    /* @keyframes rolateLine {
+      0% {
+
+      }
+    } */
+    /* .rotate {
+      transform: rotate(1800deg);
+      transition: all 6s 0s ease-out;
+    } */
+
+    #startBtn {
+      width: 1.51rem;
+      height: 1.98rem;
+      margin: 2rem auto;
+      background: url('./img/turntable_click@2x.png') no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 2.35rem;
+      top: 0rem;
+      transform-origin: 0.755rem 1.225rem;
+    }
+    
+
+  </style>
+  <script type="text/javascript">
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 750*100 + 'px';
+  </script>
+</head>
+<body>
+  <div class='container'>
+    <div class='main'></div>
+    <div id='startBtn'></div>
+  </div>
+</body>
+<script type="text/javascript" src="./lottery.js?id=Math.random()"></script>
+</html>
